@@ -2,7 +2,7 @@ var plr = document.getElementById("player");
 
 const var speed = 10;
 
-document.addEventListener("keyPressed", (e) => {
+document.addEventListener("keyPress", (e) => {
   if(e.code == "w"){
     plr.top -= speed
   }else if(e.code == "s"){
