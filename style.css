@@ -1,5 +1,16 @@
 html{
-  background-image: radial-gradient(rgba(24, 20, 36, .9) #181424  #19251a);
+  background-color: #19251a;
+  background-image: radial-gradient(rgba(24, 20, 36, .9), #181424, #19251a);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  color: navajowhite;
+  
+  margin: 20px;
+
+  text-shadow: 1px 1px 5px navajowhite;
 }
 
 .character{
