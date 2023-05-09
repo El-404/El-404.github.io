@@ -1,3 +1,7 @@
+html{
+  background-image: radial-gradient(rgba(24, 20, 36, .9) #181424  #19251a);
+}
+
 .character{
   width: 100px;
   height: 100px;
