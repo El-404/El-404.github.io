@@ -11,7 +11,7 @@ document.addEventListener("keypress", (event) => {
 
   if(key == "KeyW" && player.dataset.pos > 5){
     player.id = "filler";
-    document.querySelector('data-pos="'+(Number(player.dataset.pos) - 5)+'"]').id = "player";
+    document.querySelector('[data-pos="'+(Number(player.dataset.pos) - 5)+'"]').id = "player";
     player = document.querySelector("#player");
   }
   if(key == "KeyS" && player.dataset.pos < 20){
