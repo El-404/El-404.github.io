@@ -11,15 +11,47 @@ html{
   margin: 20px;
 
   text-shadow: 1px 1px 5px navajowhite;
+
+  width: 100%;
+  height: 100%;
+
+  overflow:hidden;
 }
 
 .character{
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 90px;
   
   border: 2px black solid;
+
+  position: unset;
+
+  display: inline-grid;
 }
 
 #player{
   background-color: navajowhite;
+}
+
+#enemy{
+  background-color: red;
+}
+
+#map{
+  background-color:#1f0033;
+  
+  border: 1px black solid;
+  
+  width: 500px;
+  height: 500px
+
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  justify-content: space-evenly;
+  
+  gap: 7.5px;
+
+  padding-top: 5px;
+  padding-left: 5px;
 }
