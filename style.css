@@ -42,7 +42,7 @@ html{
   
   border: 1px black solid;
   
-  width: 500px;
+  width: 495px;
   height: 500px
 
   display: grid;
@@ -50,7 +50,7 @@ html{
   grid-template-rows: auto auto auto auto auto;
   justify-content: space-evenly;
   
-  gap: 10px;
+  gap: 5px;
 
   padding-top: 5px;
   padding-left: 5px;
