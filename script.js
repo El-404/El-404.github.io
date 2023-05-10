@@ -29,6 +29,7 @@ document.addEventListener("keypress", (event) => {
     document.querySelector('[data-pos="'+(Number(player.dataset.pos) + 1)+'"]').id = "player";
     player = document.querySelector("#player");
   }
+  document.querySelector("#text").innerHTML = player.dataset.pos;
 });
 
 /*
