@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(#524C42 10%, #32012f);
+  color: #E2DFD0;
+  text-shadow:  0 0 5px #fad000;
+  position: fixed;
+}
+  
+img {
+  border-radius: 50%;
+}
+  
+h1 {
+  position: sticky;
+  top: 5vh;
+}
+
+.navigation {
+  position: fixed;
+  bottom: 50px;
+}
