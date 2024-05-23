@@ -13,26 +13,25 @@ elementIsVisibleInViewport = (el, partiallyVisible = false) => {
     : top >= 0 && left >= 0 && bottom <= innerHeight && right <= innerWidth;
 };
 
-document.onscroll = function() {
-  foreach(imgs, function(i){
-    if(elementIsVisibleInViewport(imgs.item(i))) imgs.item(i).style.filter="blur(0)"; 
-      else imgs.item(i).style.filter="blur(6px)";
-  });
-};
-
 foreach(imgs, function(i){
   if(elementIsVisibleInViewport(imgs.item(i))) imgs.item(i).style.filter="blur(0)"; 
     else imgs.item(i).style.filter="blur(6px)";
 });
 
 document.onscroll = function() {
+  let done = false;
   foreach(fade, function(i){
-    if(elementIsVisibleInViewport(fade.item(i)) && !elementIsVisibleInViewport(fade.item(i-1))) fade.item(i).style.filter="blur(0)";
-      else fade.item(i).style.filter="blur(60px)";
+    if(elementIsVisibleInViewport(fade.item(i), true) && !done)  { fade.item(i).style.filter="blur(0)"; done = true;} 
+      else fade.item(i).style.filter="blur(6px)";
+  });
+  foreach(imgs, function(i){
+    if(elementIsVisibleInViewport(imgs.item(i))) imgs.item(i).style.filter="blur(0)"; 
+      else imgs.item(i).style.filter="blur(6px)";
   });
 };
 
+let done = false;
 foreach(fade, function(i){
-  if(elementIsVisibleInViewport(fade.item(i)) || elementIsVisibleInViewport(fade.item(i-1))) fade.item(i).style.filter="blur(0)"; 
+  if(elementIsVisibleInViewport(fade.item(i), true) && !done)  { fade.item(i).style.filter="blur(0)"; done = true;} 
     else fade.item(i).style.filter="blur(6px)";
 });

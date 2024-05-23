@@ -76,5 +76,5 @@ img {
 #imgHolder {
   border: 10px, solid, black;
   display:grid;
-  row-gap: 25vh;
+  row-gap: 10vh;
 }
