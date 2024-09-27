@@ -1,0 +1,8 @@
+.container {
+  background-image: linear-gradient(to bottom, var(--secondary-color), var(--background-color) 90%);
+  
+  margin-top:-8px;
+  margin-left:-5px;
+  width: 25vw;
+  height: 100%;
+}

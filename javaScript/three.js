@@ -70,8 +70,7 @@ document.querySelectorAll(`.container3D`).forEach((elem) => {
       object = gltf.scene;
       object.rotation.x = elem.dataset.rotation != null ? elem.dataset.rotation : .5;
       scene.add(object);
-      objectsToOutline = [object];
-      if(elem.dataset.outline == 1) outlinePass.selectedObjects = objectsToOutline;
+      outlinePass.selectedObjects = (elem.dataset.outline == 0 ? [] : [object]);
     },
     function (xhr) {
       //While it is loading, log the progress
